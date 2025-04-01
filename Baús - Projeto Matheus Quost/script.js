@@ -26,8 +26,14 @@ function mostrarConteudo() {
 function playMusic() {
     var audio = document.getElementById("myAudio");
     audio.play();
+    audio.volume=0.2;
 }
 
 function esconderBotao() {
     document.getElementById('meuBotao').classList.add('hidden');
+}
+
+function tocarSom() {
+    document.getElementById("som").play();
+    audio.volume=0.6;
 }
